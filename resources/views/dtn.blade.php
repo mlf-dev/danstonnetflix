@@ -8,8 +8,8 @@
 {{--    BOOSTRAP : --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 {{--    CSS PERSO : --}}
-    <link rel="stylesheet" href="{{asset('css/index.css')}}">
-
+    <link rel="stylesheet" href="{{asset('css/dtn.css')}}">
+    @yield('css')
     <title>Dans ton Netflix</title>
 </head>
 
@@ -24,7 +24,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav d-flex justify-content-around">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">

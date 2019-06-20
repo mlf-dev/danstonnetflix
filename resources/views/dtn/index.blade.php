@@ -1,4 +1,9 @@
 @extends('dtn')
+
+@section('css')
+    <link rel="stylesheet" href="{{asset('css/index.css')}}">
+@endsection
+
 @section('content')
 
 <div id="div-background">
@@ -27,24 +32,34 @@
 
     <div class="row content">
 
-        <div id="home-text-left" class="col-4 offset-md-2">
+        <div class="col-8 offset-2 background-dark-opactiy">
+            <div class="row">
+                <div id="home-text-left" class=" col-6">
 
-            <p class="align-bottom">Envie de partager ce que vous regardez sur Netflix sans passer des heures à chercher le nom d'une série ? N'hésitez plus et inscrivez-vous ! Avec Dans ton Netflix, ajoutez progressivement vos séries et partagez les avec votre entourage en un clic !</p>
-        </div>
-
-        <div class="col-4">
-
-            <h1>S'identifier</h1>
-
-            <form action="">
-                <div class="form-group">
-                    <input type="text" class="form-control input-log" placeholder="Email">
-                    <input type="password" class="form-control input-log" placeholder="Mot de passe">
-                    <button class="btn btn-sidentifier" type="submit">S'identifier</button>
+                    <p class="align-bottom">Envie de partager ce que vous regardez sur Netflix sans passer des heures à chercher le nom d'une série ?
+                        <br>Avec Dans ton Netflix, ajoutez progressivement vos séries et partagez les avec votre entourage en un clic !<br>
+                        Pas encore de compte?<br>
+                        <a href="#" id="a-inscrivez-vous">Inscrivez-vous</a></p>
                 </div>
-            </form>
+
+                <div class="sidentifier col-6">
+
+                    <h1>S'identifier</h1>
+
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-log" placeholder="Email">
+                            <input type="password" class="form-control input-log" placeholder="Mot de passe">
+                            <button class="btn btn-sidentifier" type="submit">S'identifier</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
 
         </div>
+
+
 
     </div>
 

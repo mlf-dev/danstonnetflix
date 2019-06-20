@@ -1,0 +1,38 @@
+/*BODY*/
+body{
+    background-color: #141414;
+    color:white;
+}
+
+/*CONTAINER FLUID*/
+.container-fluid{
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/*---------------NAVBAR--------------*/
+.navbar {
+    background-color: #141414;
+    position: relative;
+    z-index: 10;
+}
+/*DIV NAVBAR*/
+.navbar-div-col {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.navbar-nav {
+    width:100%;
+}
+/*Logo navbar : */
+.logo_left_side {
+    height: 30px;
+}
+.navbar-brand {
+    font-size: 20px;
+}
+
