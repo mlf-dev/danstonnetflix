@@ -28,11 +28,11 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Toutes les séries</a>
+                <a class="nav-link" href="#">Séries populaires</a>
             </li>
             <li>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Rechercher une série" aria-label="Search">
+                <form class="form-inline" method="GET" action="{{route('search')}}">
+                    <input name="search_tv_show" id="search_tv_show" class="form-control mr-sm-2" type="search" placeholder="Rechercher une série" aria-label="Search">
                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
                 </form>
             </li>

@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'dtn\MainController@index')->name('home');
+
+Route::get('/search', 'dtn\MainController@search')->name('search');
