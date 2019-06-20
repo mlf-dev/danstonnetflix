@@ -36,3 +36,31 @@ body{
     font-size: 20px;
 }
 
+/*---------------- BACKGROUND ---------------*/
+#div-background{
+    position: fixed;
+}
+#span-dark-background{
+    position: fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+.img-background{
+    position: fixed;
+    z-index: -2;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+}
+
+/* --------------- DARK OPACITY --------------*/
+.background-dark-opactiy{
+    background-color: rgba(0,0,0,.6);
+    border-radius: 10px;
+}

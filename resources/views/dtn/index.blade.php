@@ -6,14 +6,8 @@
 
 @section('content')
 
-<div id="div-background">
-    <span id="span-dark-background"></span>
-    <img class="img-background" src="{{asset('img/background_home.jpg')}}" alt="image-background">
-</div>
-
 
 <div id="maincontainer" class="container">
-
 
     <div id="bigLogoContainer">
         <div class="row">
@@ -28,7 +22,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="row content">
 

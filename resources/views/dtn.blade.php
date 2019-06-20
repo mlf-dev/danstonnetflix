@@ -45,6 +45,11 @@
 
 <main>
 
+    <div id="div-background">
+        <span id="span-dark-background"></span>
+        <img class="img-background" src="{{asset('img/background_home.jpg')}}" alt="image-background">
+    </div>
+
 @yield('content')
 
 </main>
