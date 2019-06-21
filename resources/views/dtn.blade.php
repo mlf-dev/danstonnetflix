@@ -28,11 +28,22 @@
                 <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Séries populaires</a>
+                <a class="nav-link" href="#">Séries</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Films</a>
             </li>
             <li>
                 <form class="form-inline" method="GET" action="{{route('search')}}">
                     <input name="search_tv_show" id="search_tv_show" class="form-control mr-sm-2" type="search" placeholder="Rechercher une série" aria-label="Search">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="serie" value="serie" checked>
+                        <label class="form-check-label" for="serie">Série</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="film" value="film">
+                        <label class="form-check-label" for="film">Film</label>
+                    </div>
                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
                 </form>
             </li>

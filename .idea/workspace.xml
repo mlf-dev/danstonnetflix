@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95ea6bd2-4cf1-4144-bdfb-69d3a7663c11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/progressCircle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/progressCircle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/searchResult.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/searchResult.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dtn.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dtn.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dtn/searchResult.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dtn/searchResult.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +50,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/dtn/searchResult.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
+            <state relative-caret-position="950">
               <caret line="38" column="60" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/dtn.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -70,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/searchResult.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="650">
@@ -122,13 +126,13 @@
         <option value="$PROJECT_DIR$/resources/views/dtn/index.blade.php" />
         <option value="$PROJECT_DIR$/public/css/index.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/dtn/MainController.php" />
-        <option value="$PROJECT_DIR$/resources/views/dtn.blade.php" />
         <option value="$PROJECT_DIR$/public/js/progressBar.min.js" />
         <option value="$PROJECT_DIR$/public/css/dtn.css" />
         <option value="$PROJECT_DIR$/public/js/progressCircle.js" />
         <option value="$PROJECT_DIR$/public/css/progressCircle.css" />
         <option value="$PROJECT_DIR$/resources/views/dtn/searchResult.blade.php" />
         <option value="$PROJECT_DIR$/public/css/searchResult.css" />
+        <option value="$PROJECT_DIR$/resources/views/dtn.blade.php" />
       </list>
     </option>
   </component>
@@ -332,12 +336,12 @@
       <updated>1560430316389</updated>
       <workItem from="1560430317919" duration="2283000" />
       <workItem from="1560756251520" duration="5000" />
-      <workItem from="1561016776543" duration="42616000" />
+      <workItem from="1561016776543" duration="43817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44904000" />
+    <option name="totallyTimeSpent" value="46105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -430,13 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dtn.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/dtn/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -482,17 +479,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dtn/searchResult.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="38" column="60" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/searchResult.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dtn/searchResult.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="38" column="60" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dtn.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
         </state>
       </provider>
     </entry>
