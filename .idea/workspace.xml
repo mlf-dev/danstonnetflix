@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95ea6bd2-4cf1-4144-bdfb-69d3a7663c11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/tv.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dtn/movies.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dtn/tv.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dtn/tvs.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/dtn/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/dtn/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/allseries.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/popularseriesandtvs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/dtn.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dtn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dtn.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dtn.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dtn/allseries.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dtn/searchResult.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dtn/searchResult.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/RecommendationStatut.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RecommendationStatut.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_24_100951_create_show_to_watches_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_24_100951_create_show_to_watches_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,64 +47,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_092646_create_table_notification-users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="513">
               <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_093618_create_recommendations_table.php">
+        <entry file="file://$PROJECT_DIR$/app/RecommendationStatut.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_094713_create_recommendationStatuts_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_104432_add_foreign_keys_to_recommendations.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_104853_add_foreign_serie_of_the_moment_to_user.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_100611_create_shows_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+            <state relative-caret-position="190">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -123,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_100951_create_show_to_watches_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+            <state relative-caret-position="80">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -138,11 +82,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_102945_create_viewed_shows_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
               <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_104432_add_foreign_keys_to_recommendations.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_104853_add_foreign_serie_of_the_moment_to_user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="722">
+              <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -192,14 +154,15 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_06_24_092646_create_table_notification-users.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_24_094929_create_tvs_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_24_094713_create_recommendation-_statuts_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_24_100611_create_shows_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_24_093618_create_recommendations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_24_090646_create_notifications_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_24_102803_create_viewed_statuses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_24_100951_create_show_to_watches_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_24_102945_create_viewed_shows_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_24_104853_add_foreign_serie_of_the_moment_to_user.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_24_104432_add_foreign_keys_to_recommendations.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_24_093618_create_recommendations_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_24_100611_create_shows_table.php" />
+        <option value="$PROJECT_DIR$/app/RecommendationStatut.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_24_100951_create_show_to_watches_table.php" />
       </list>
     </option>
   </component>
@@ -430,17 +393,17 @@
       <updated>1560430316389</updated>
       <workItem from="1560430317919" duration="2283000" />
       <workItem from="1560756251520" duration="5000" />
-      <workItem from="1561016776543" duration="66953000" />
+      <workItem from="1561016776543" duration="67317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69241000" />
+    <option name="totallyTimeSpent" value="69605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3676681" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39914164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -641,26 +604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/RecommendationStatut.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_094929_create_tvs_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6f20d234-8213-404a-b93e-0ba2f37f0202/schema/db_dans_ton_netflix/table/migrations">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
         </state>
       </provider>
     </entry>
@@ -678,24 +625,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://6f20d234-8213-404a-b93e-0ba2f37f0202/schema/db_dans_ton_netflix/table/viewed_statuses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6f20d234-8213-404a-b93e-0ba2f37f0202/schema/db_dans_ton_netflix/table/migrations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_100611_create_shows_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        <state relative-caret-position="304">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_094713_create_recommendationStatuts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_093618_create_recommendations_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        <state relative-caret-position="403">
+          <caret line="25" column="110" lean-forward="true" selection-start-line="25" selection-start-column="110" selection-end-line="25" selection-end-column="110" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_092646_create_table_notification-users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="513">
           <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/RecommendationStatut.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_100951_create_show_to_watches_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -706,26 +692,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_100951_create_show_to_watches_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_102945_create_viewed_shows_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        <state relative-caret-position="435">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="das://6f20d234-8213-404a-b93e-0ba2f37f0202/schema/db_dans_ton_netflix/table/viewed_statuses">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_094713_create_recommendationStatuts_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_104432_add_foreign_keys_to_recommendations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="418">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -733,20 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_104432_add_foreign_keys_to_recommendations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_24_102945_create_viewed_shows_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>

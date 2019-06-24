@@ -942,7 +942,7 @@
     <table id="238" parent="3" name="migrations">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="239" parent="3" name="notification-users">
+    <table id="239" parent="3" name="notification_users">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
     <table id="240" parent="3" name="notifications">
@@ -957,7 +957,7 @@
     <table id="243" parent="3" name="recommendations">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="244" parent="3" name="show_to_watches">
+    <table id="244" parent="3" name="showToWatches">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
     <table id="245" parent="3" name="shows">
@@ -1256,11 +1256,11 @@ id_user</ColNames>
       <DataType>bigint(20) unsigned|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="299" parent="244" name="show_to_watches_id_show_foreign">
+    <index id="299" parent="244" name="showtowatches_id_show_foreign">
       <ColNames>id_show</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="300" parent="244" name="show_to_watches_id_user_who_recommends_foreign">
+    <index id="300" parent="244" name="showtowatches_id_user_who_recommends_foreign">
       <ColNames>id_user_who_recommends</ColNames>
       <Type>btree</Type>
     </index>
@@ -1270,21 +1270,21 @@ id_user</ColNames>
 id_show</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="302" parent="244" name="show_to_watches_id_user_foreign">
+    <foreign-key id="302" parent="244" name="showtowatches_id_user_foreign">
       <ColNames>id_user</ColNames>
       <RefSchemaName>db_dans_ton_netflix</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="303" parent="244" name="show_to_watches_id_show_foreign">
+    <foreign-key id="303" parent="244" name="showtowatches_id_show_foreign">
       <ColNames>id_show</ColNames>
       <RefSchemaName>db_dans_ton_netflix</RefSchemaName>
       <RefTableName>shows</RefTableName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="304" parent="244" name="show_to_watches_id_user_who_recommends_foreign">
+    <foreign-key id="304" parent="244" name="showtowatches_id_user_who_recommends_foreign">
       <ColNames>id_user_who_recommends</ColNames>
       <RefSchemaName>db_dans_ton_netflix</RefSchemaName>
       <RefTableName>users</RefTableName>

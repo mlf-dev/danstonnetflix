@@ -13,7 +13,7 @@ class CreateShowToWatchesTable extends Migration
      */
     public function up()
     {
-        Schema::create('show_to_watches', function (Blueprint $table) {
+        Schema::create('showToWatches', function (Blueprint $table) {
             $table->timestamps();
 
             $table->unsignedBigInteger('id_user');

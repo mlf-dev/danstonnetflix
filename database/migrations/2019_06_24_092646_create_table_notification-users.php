@@ -13,7 +13,7 @@ class CreateTableNotificationUsers extends Migration
      */
     public function up()
     {
-        Schema::create('notification-users', function (Blueprint $table) {
+        Schema::create('notification_users', function (Blueprint $table) {
             $table->timestamps();
 
             $table->unsignedBigInteger('id_notification');
