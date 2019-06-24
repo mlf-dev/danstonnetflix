@@ -14,3 +14,11 @@
 Route::get('/', 'dtn\MainController@index')->name('home');
 
 Route::get('/search', 'dtn\MainController@search')->name('search');
+
+Route::get('/movies', 'dtn\MainController@popularMovies')->name('pop_movies');
+
+Route::get('/tvs', 'dtn\MainController@popularTvs')->name('pop_tvs');
+
+Route::get('/movie/{id}', 'dtn\MainController@movie')->name('movie');
+
+Route::get('/tv/{id}', 'dtn\MainController@tv')->name('tv');

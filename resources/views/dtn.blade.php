@@ -28,21 +28,21 @@
                 <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Séries</a>
+                <a class="nav-link" href="{{route('pop_tvs')}}">Séries</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Films</a>
+                <a class="nav-link" href="{{route('pop_movies')}}">Films</a>
             </li>
             <li>
                 <form class="form-inline" method="GET" action="{{route('search')}}">
-                    <input name="search_tv_show" id="search_tv_show" class="form-control mr-sm-2" type="search" placeholder="Rechercher une série" aria-label="Search">
+                    <input name="search" id="search" class="form-control mr-sm-2" type="text" placeholder="Rechercher une série" aria-label="Search">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="serie" value="serie" checked>
+                        <input class="form-check-input" type="radio" name="searchOption" id="serie" value="tv" checked>
                         <label class="form-check-label" for="serie">Série</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="film" value="film">
-                        <label class="form-check-label" for="film">Film</label>
+                        <input class="form-check-input" type="radio" name="searchOption" id="movie" value="movie">
+                        <label class="form-check-label" for="movie">Film</label>
                     </div>
                     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
                 </form>
@@ -54,12 +54,13 @@
     </div>
 </nav>
 
+<div id="div-background">
+    <span id="span-dark-background"></span>
+    <img class="img-background" src="{{asset('img/background_home.jpg')}}" alt="image-background">
+</div>
+
 <main>
 
-    <div id="div-background">
-        <span id="span-dark-background"></span>
-        <img class="img-background" src="{{asset('img/background_home.jpg')}}" alt="image-background">
-    </div>
 
 @yield('content')
 

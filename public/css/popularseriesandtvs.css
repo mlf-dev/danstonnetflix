@@ -1,0 +1,77 @@
+main h1{
+    font-size: 30px;
+    margin: 30px auto;
+}
+
+main img{
+    /*width:192px;*/
+    /*height:108px;*/
+    opacity: 0.8;
+}
+main img:hover{
+    opacity: 1;
+}
+.tv-or-movie-item{
+    /*position: relative;*/
+    padding:0;
+    margin-bottom:30px;
+}
+#span-dark-background{
+    opacity: 0.8;
+}
+main h2{
+    font-size: 15px;
+    background-color: rgba(0,0,0,0.7);
+    position:relative;
+    top: -15px;
+}
+
+/* menu item*/
+.btn-group{
+    position: relative;
+}
+.plus-button{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 27px;
+    color: white;
+    position: absolute;
+    right:7px;
+    top:7px;
+    z-index: 10;
+    outline: none;
+}
+.plus-button:focus{
+    outline:none;
+}
+.plus-button>span{
+    position: relative;
+    top: -12px;
+    left:-4px;
+}
+.dropdown-menu{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.plus-button:hover{
+    border: 2px solid white;
+}
+.plus-button:hover>span{
+    top:-13px;
+    left:-5px;
+}
+.dropdown-item:link,.dropdown-item:visited{
+    color: white;
+}
+.dropdown-item:hover,.dropdown-item:active{
+    color:black;
+}
+.plus-d-infos-link:link,.plus-d-infos-link:visited{
+    color:white;
+}
+.plus-d-infos-link:hover,.plus-d-infos-link:active{
+    color:black;
+}

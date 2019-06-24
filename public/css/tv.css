@@ -1,0 +1,27 @@
+#background-backdrop-path{
+    position: relative;
+    opacity: 0.25;
+    border-radius: 20px;
+}
+#span-dark-background{
+    opacity: 0.9;
+}
+#poster-item{
+    border-radius:10px;
+}
+#div-background{
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    z-index: 1;
+    padding: 20px;
+}
+.div-container-item{
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+.content{
+    position: relative;
+    z-index: 50;
+}
