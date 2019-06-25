@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'dtn\MainController@index')->name('home');
+Route::get('/', 'dtn\MainController@index')->name('index');
 
 Route::get('/search', 'dtn\MainController@search')->name('search');
 
@@ -22,3 +22,9 @@ Route::get('/tvs', 'dtn\MainController@popularTvs')->name('pop_tvs');
 Route::get('/movie/{id}', 'dtn\MainController@movie')->name('movie');
 
 Route::get('/tv/{id}', 'dtn\MainController@tv')->name('tv');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/register', 'dtn\registerController@register')->name('register');

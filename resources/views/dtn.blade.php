@@ -18,14 +18,14 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark">
     {{--LOGO EN HAUT A GAUCHE : --}}
-    <a class="navbar-brand" href="{{route('home')}}">DANS TON<img class="logo_left_side" src="{{asset('img/logo_netflix.png')}}" alt="logo netflix"></a>
+    <a class="navbar-brand" href="{{route('index')}}">DANS TON<img class="logo_left_side" src="{{asset('img/logo_netflix.png')}}" alt="logo netflix"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav d-flex justify-content-around">
             <li class="nav-item">
-                <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only"></span></a>
+                <a class="nav-link" href="{{route('index')}}">Home <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('pop_tvs')}}">Séries</a>
@@ -48,7 +48,11 @@
                 </form>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Se connecter</a>
+                @if (\Illuminate\Support\Facades\Auth::user())
+                    <a class="nav-link" href="{{route('home')}}">{{\Illuminate\Support\Facades\Auth::user()->pseudo}}</a>
+                    @else
+                <a class="nav-link" href="{{route('index')}}">Se connecter</a>
+                    @endif
             </li>
         </ul>
     </div>

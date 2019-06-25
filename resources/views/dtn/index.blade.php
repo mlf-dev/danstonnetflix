@@ -32,18 +32,30 @@
                     <p class="align-bottom">Envie de partager ce que vous regardez sur Netflix sans passer des heures à chercher le nom d'une série ?
                         <br>Avec Dans ton Netflix, ajoutez progressivement vos séries et partagez les avec votre entourage en un clic !<br>
                         Pas encore de compte?<br>
-                        <a href="#" id="a-inscrivez-vous">Inscrivez-vous</a></p>
+                        <a href="{{route('register')}}" id="a-inscrivez-vous">Inscrivez-vous</a></p>
                 </div>
 
                 <div class="sidentifier col-6">
 
                     <h1>S'identifier</h1>
 
-                    <form action="#" method="POST">
+                    <form action="{{ route('login') }}" method="POST">
+                        @csrf
                         <div class="form-group">
-                            <input type="text" class="form-control input-log" placeholder="Email">
-                            <input type="password" class="form-control input-log" placeholder="Mot de passe">
+                            <input id="email" type="text" class="form-control input-log @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}" required autocomplete="email" autofocus name="email">
+                            @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                            @enderror
+                            <input id="password" type="password" class="form-control input-log @error('password') is-invalid @enderror" placeholder="Mot de passe" name="password" required autocomplete="current-password">
+                            @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                            @enderror
                             <button class="btn btn-sidentifier" type="submit">S'identifier</button>
+
                         </div>
                     </form>
 

@@ -1,0 +1,42 @@
+#bigLogoContainer{
+    margin-top: 20px;
+}
+#logo_entier_netflix {
+    width: 400px;
+    height: 120px;
+}
+.card-header{
+    margin: 0;
+    padding-bottom:0;
+}
+.form-group{
+    padding:0;
+    margin:0;
+}
+.card-body{
+    padding-top: 0;
+}
+
+.card{
+    background: rgba(0,0,0,.7);
+    border-radius: 20px;
+    margin-top: 5%;
+
+}
+.input-register{
+    background-color: #333;
+    color: #888;
+    border: none;
+    margin: 15px 0;
+}
+.input-register:focus{
+    background-color: #505050;
+    border: 1px solid #505050;
+    color:white;
+}
+.btn-senregistrer {
+    margin-top: 10px;
+    background-color: #e50914;
+    color: white;
+}
+
