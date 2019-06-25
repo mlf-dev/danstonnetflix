@@ -26,6 +26,7 @@
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">+ Déjà vu</a>
                                 <a class="dropdown-item" href="#">+ En ce moment</a>
+                                <a class="dropdown-item" href="#">+ A regarder plus tard</a>
                                 <a class="dropdown-item" href="#">Recommander à un ami</a>
                             </div>
                         </div>

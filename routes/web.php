@@ -28,3 +28,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/register', 'dtn\registerController@register')->name('register');
+
+Route::get('/user/{id}', 'dtn\userController@profile')->name('profile');
+Route::get('/user/encemoment/addmovie', 'dtn\userController@addEnCeMoment_movie')->name('add_en_ce_moment_movie');

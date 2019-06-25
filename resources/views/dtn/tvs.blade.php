@@ -9,6 +9,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <h1>Séries populaires</h1>
+        <div id="flash-message">
+            @include('flash::message')
+        </div>
     </div>
     <div class="row justify-content-center row-container-tvs-or-movies">
         @for($i=0; $i<18; $i++)
@@ -18,6 +21,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">+ Déjà vu</a>
                         <a class="dropdown-item" href="#">+ En ce moment</a>
+                        <a class="dropdown-item" href="#">+ A regarder plus tard</a>
                         <a class="dropdown-item" href="#">Recommander à un ami</a>
                         <a href="{{route('tv', ['id'=>$datas->results[$i]->id])}}" class=" dropdown-item plus-d-infos-link">Voir plus d'infos</a>
                     </div>

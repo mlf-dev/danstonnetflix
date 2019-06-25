@@ -1,0 +1,23 @@
+.card{
+    background-color: rgba(0,0,0,0.7);
+    margin-top: 2%;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+}
+.profile-image{
+    border-radius: 20px;
+    border:5px double #fd0202;
+    width: 150px;
+    height: 150px;
+}
+.p-no-data{
+    color: #676565;
+    margin-bottom: 0;
+}
+.link-search:link,.link-search:visited{
+    color: red;
+}
+.link-search:hover,.link-search:active{
+    text-decoration: underline red;
+}

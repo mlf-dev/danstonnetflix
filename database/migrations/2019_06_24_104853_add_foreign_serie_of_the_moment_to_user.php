@@ -15,6 +15,10 @@ class AddForeignSerieOfTheMomentToUser extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
+            $table->unsignedBigInteger('id_serie_of_the_moment')->nullable();
+            $table->foreign('id_serie_of_the_moment')->references('id')->on('shows')->onDelete('set null');
+
+            Schema::enableForeignKeyConstraints();
         });
     }
 
@@ -27,11 +31,6 @@ class AddForeignSerieOfTheMomentToUser extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-
-            $table->unsignedBigInteger('id_serie_of_the_moment')->nullable();
-            $table->foreign('id_serie_of_the_moment')->references('id')->on('shows')->onDelete('set null');
-
-            Schema::enableForeignKeyConstraints();
         });
     }
 }

@@ -23,7 +23,12 @@
     padding: 20px 20px;
     border-radius: 10px;
 }
-
+#search-div{
+    padding: 30px;
+}
+.btn-rechercher-index{
+    margin-top: 10px !important;
+}
 .input-log{
     background-color: #333;
     color: #888;

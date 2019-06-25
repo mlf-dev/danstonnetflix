@@ -49,7 +49,7 @@
             </li>
             <li class="nav-item">
                 @if (\Illuminate\Support\Facades\Auth::user())
-                    <a class="nav-link" href="{{route('home')}}">{{\Illuminate\Support\Facades\Auth::user()->pseudo}}</a>
+                    <a class="nav-link" href="{{route('profile', ['id'=>\Illuminate\Support\Facades\Auth::user()->id])}}">{{\Illuminate\Support\Facades\Auth::user()->pseudo}}</a>
                     @else
                 <a class="nav-link" href="{{route('index')}}">Se connecter</a>
                     @endif
@@ -64,7 +64,6 @@
 </div>
 
 <main>
-
 
 @yield('content')
 
