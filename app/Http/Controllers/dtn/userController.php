@@ -14,29 +14,22 @@ class userController extends Controller
     //
     public function profile(){
         $user = Auth::user();
-        return view ('profile', ['user'=>$user]);
+        $encemoment = $user->enCeMoment;
+        //dd($encemoment);
+
+        $UserShowsController= new UserShowsController();
+
+        $serie_du_moment = $UserShowsController->searchByID($encemoment);
+        return view ('dtn.profile', compact('user', 'serie_du_moment'));
     }
 
-    public function addEnCeMoment_movie(Request $request){
-        // Création de l'entité
-        $show= new Show();
-        // Hydratation
-        $show->id_tmdb = $request->id_show;
-        $show->isMovie = true;
-        $show->save();
+/*    public function convertDBuserToUserClass($userDB){
+        $userClass = new User();
+        $userClass->pseudo = $userDB->pseudo;
+        $userClass->email = $userDB->email;
+        $userClass->id_serie_of_the_moment = $userDB->id_serie_of_the_moment;
 
-        $showSavedInDB = DB::table('shows')->where('id_tmdb', '=',$request->id_show)->first();
-        // dd($showSavedInDB->id);
+        return $userClass;
+    }*/
 
-        $user = User::find(Auth::user()->id);
-        //dd($user);
-        $user->id_serie_of_the_moment = $showSavedInDB->id;
-        $user->save();
-
-        $showname = $request->name;
-
-        flash("Vous regardez en ce moment : ".$showname.".")->success();
-        //return view('dtn.movies', ['message'=>$message]);
-        return redirect()->route('pop_movies');
-    }
 }

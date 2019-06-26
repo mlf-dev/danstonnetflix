@@ -36,4 +36,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function enCeMoment(){
+        return $this->belongsTo('App\Show', 'id_serie_of_the_moment');
+    }
 }

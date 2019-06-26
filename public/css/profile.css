@@ -21,3 +21,14 @@
 .link-search:hover,.link-search:active{
     text-decoration: underline red;
 }
+.card-body img{
+    width:200px;
+    border-radius: 15px;
+}
+h5{
+    color: #9898a2;
+}
+.show-name{
+    font-weight: lighter;
+    color: #9898a2;
+}

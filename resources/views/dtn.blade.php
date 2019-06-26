@@ -35,7 +35,7 @@
             </li>
             <li>
                 <form class="form-inline" method="GET" action="{{route('search')}}">
-                    <input name="search" id="search" class="form-control mr-sm-2" type="text" placeholder="Rechercher une série" aria-label="Search">
+                    <input name="search" id="search" class="form-control mr-sm-2" type="text" placeholder="Que recherchez-vous ?" aria-label="Search">
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="searchOption" id="serie" value="tv" checked>
                         <label class="form-check-label" for="serie">Série</label>
@@ -49,7 +49,16 @@
             </li>
             <li class="nav-item">
                 @if (\Illuminate\Support\Facades\Auth::user())
-                    <a class="nav-link" href="{{route('profile', ['id'=>\Illuminate\Support\Facades\Auth::user()->id])}}">{{\Illuminate\Support\Facades\Auth::user()->pseudo}}</a>
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{\Illuminate\Support\Facades\Auth::user()->pseudo}}
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="{{route('profile', ['id'=>\Illuminate\Support\Facades\Auth::user()->id])}}">Profil</a>
+                            <a class="dropdown-item" href="{{route('logout')}}">Se déconnecter</a>
+                        </div>
+                    </div>
                     @else
                 <a class="nav-link" href="{{route('index')}}">Se connecter</a>
                     @endif

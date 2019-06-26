@@ -1,0 +1,18 @@
+.plus-button:focus{
+    outline:none;
+}
+.plus-button>span{
+    position: relative;
+    top: -1px;
+}
+.dropdown-menu{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.dropdown-item:link,.dropdown-item:visited{
+    color: white;
+}
+.dropdown-item:hover,.dropdown-item:active{
+    color:black;
+}

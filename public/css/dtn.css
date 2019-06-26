@@ -20,7 +20,7 @@ main{
 .navbar {
     background-color: #141414;
     position: relative;
-    z-index: 10;
+    z-index: 1000;
 }
 /*DIV NAVBAR*/
 .navbar-div-col {

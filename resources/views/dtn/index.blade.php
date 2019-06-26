@@ -42,16 +42,20 @@
                     <div id="search-div" class="col-md-6">
                         <h1>Rechercher :</h1>
                         <form method="GET" action="{{route('search')}}">
-                            <input name="search" id="search" class="form-control mr-sm-2" type="text" placeholder="Rechercher une série" aria-label="Search">
+                            <input name="search" id="search" class="form-control mr-sm-2" type="text" placeholder="Que recherchez-vous ?" aria-label="Search">
                             <br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="searchOption" id="serie" value="tv" checked>
                                 <label class="form-check-label" for="serie">Série</label>
                             </div>
-                            <br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="searchOption" id="movie" value="movie">
                                 <label class="form-check-label" for="movie">Film</label>
+                            </div>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="searchOption" id="user" value="user">
+                                <label class="form-check-label" for="serie">Utilisateur</label>
                             </div>
                             <br>
                             <button class="btn-rechercher-index btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
