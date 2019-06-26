@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="row justify-content-center">
                                     <div>
-                                        @if($user->id_serie_of_the_moment)
+                                        @if($user->id_serie_of_the_moment != null)
 
                                             <img src="https://image.tmdb.org/t/p/w300/{{$serie_du_moment->backdrop_path}}" alt="image {{$serie_du_moment->name}}">
 

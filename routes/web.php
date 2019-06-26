@@ -23,6 +23,8 @@ Route::get('/movie/{id}', 'dtn\MainController@movie')->name('movie');
 
 Route::get('/tv/{id}', 'dtn\MainController@tv')->name('tv');
 
+Route::get('/user/addfriend/{user1}/{user2}', 'dtn\FriendsController@addFriend')->name('addfriend');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -35,3 +37,6 @@ Route::get('/user/encemoment/addmovie', 'dtn\UserShowController@addEnCeMoment_mo
 Route::get('/user/encemoment/addtv', 'dtn\UserShowsController@addEnCeMoment_tv')->name('add_en_ce_moment_tv');
 
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+
+Route::get('user/{id}/friends', 'dtn\userController@friends')->name('friends');
+

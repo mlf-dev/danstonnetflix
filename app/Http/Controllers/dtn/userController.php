@@ -12,24 +12,25 @@ use Illuminate\Support\Facades\DB;
 class userController extends Controller
 {
     //
-    public function profile(){
+    public function profile(Request $request){
         $user = Auth::user();
         $encemoment = $user->enCeMoment;
         //dd($encemoment);
 
         $UserShowsController= new UserShowsController();
 
-        $serie_du_moment = $UserShowsController->searchByID($encemoment);
+        // dd($user->enCeMoment);
+        if ($user->enCeMoment == null){
+            $serie_du_moment = null;
+        } else {
+            $serie_du_moment = $UserShowsController->searchByID($encemoment);
+        }
+
         return view ('dtn.profile', compact('user', 'serie_du_moment'));
     }
 
-/*    public function convertDBuserToUserClass($userDB){
-        $userClass = new User();
-        $userClass->pseudo = $userDB->pseudo;
-        $userClass->email = $userDB->email;
-        $userClass->id_serie_of_the_moment = $userDB->id_serie_of_the_moment;
-
-        return $userClass;
-    }*/
+    public function friends(){
+        return view('dtn.friends');
+    }
 
 }

@@ -41,9 +41,8 @@ class MainController extends Controller
             $serie_du_moment = $UserShowsController->searchByID($user->encemoment);
             // dd($serie_du_moment);
             // dd($user->enCeMoment);
-            // dd($user);
             // Affichage de la vue avec passage des données
-            return view('dtn.usersearch', compact('user', 'serie_du_moment'));
+            return view('dtn.usersearch', compact('user', 'search_option', 'serie_du_moment'));
         }
 
     }
