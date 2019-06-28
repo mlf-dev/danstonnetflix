@@ -23,13 +23,20 @@ Route::get('/movie/{id}', 'dtn\MainController@movie')->name('movie');
 
 Route::get('/tv/{id}', 'dtn\MainController@tv')->name('tv');
 
-Route::get('/user/addfriend/{user1}/{user2}', 'dtn\FriendsController@addFriend')->name('addfriend');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/register', 'dtn\registerController@register')->name('register');
+
+Route::get('/user/notifications', 'dtn\userController@notifications')->name('notifications');
+
+Route::get('/user/acceptFriend/{notification}', 'dtn\FriendsController@acceptFriend')->name('acceptFriend');
+
+Route::get('/user/denyFriend/{notification}', 'dtn\FriendsController@denyFriend')->name('denyFriend');
+
+Route::get('/user/addfriend/{second_user}', 'dtn\FriendsController@addFriend')->name('addfriend');
 
 Route::get('/user/{id}', 'dtn\userController@profile')->name('profile');
 

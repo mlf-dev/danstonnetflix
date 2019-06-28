@@ -14,14 +14,19 @@ class CreateUserLinksTable extends Migration
     public function up()
     {
         Schema::create('user_links', function (Blueprint $table) {
-            $table->unsignedBigInteger('id_user_first');
-            $table->foreign('id_user_first')->references('id')->on('users')->onDelete('cascade');
+            $table->timestamps();
 
-            $table->unsignedBigInteger('id_user_last');
-            $table->foreign('id_user_last')->references('id')->on('users')->onDelete('cascade');
+
+            $table->unsignedBigInteger('current_user_id');
+            $table->foreign('current_user_id')->references('id')->on('users')->onDelete('cascade');
+
+            $table->unsignedBigInteger('second_user_id');
+            $table->foreign('second_user_id')->references('id')->on('users')->onDelete('cascade');
 
             Schema::enableForeignKeyConstraints();
-            $table->primary(['id_user_first','id_user_last']);
+            $table->primary(['current_user_id','second_user_id']);
+
+            $table->boolean('confirmed')->default(false);
         });
     }
 

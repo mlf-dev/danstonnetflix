@@ -56,6 +56,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
                             <a class="dropdown-item" href="{{route('profile', ['id'=>\Illuminate\Support\Facades\Auth::user()->id])}}">Profil</a>
+                            <a class="dropdown-item" href="{{route('notifications')}}">Mes notifications</a>
                             <a class="dropdown-item" href="{{route('friends',['id'=>\Illuminate\Support\Facades\Auth::user()->id])}}">Afficher mes amis</a>
                             <a class="dropdown-item" href="{{route('logout')}}">Se déconnecter</a>
                         </div>

@@ -36,9 +36,14 @@ class MainController extends Controller
             // recherche du User
             $user = User::where('pseudo',$search_query)->first();
             // Nouveau controller pour utilier la fonction searchByID (récupérer les informations sur le show)
-            $UserShowsController= new UserShowsController();
+            $UserShowsController = new UserShowsController();
             // récupération des datas
-            $serie_du_moment = $UserShowsController->searchByID($user->encemoment);
+            if ($user->encemoment){
+                $serie_du_moment = $UserShowsController->searchByID($user->encemoment);
+            } else {
+                $serie_du_moment = null;
+            }
+
             // dd($serie_du_moment);
             // dd($user->enCeMoment);
             // Affichage de la vue avec passage des données

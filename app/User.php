@@ -40,4 +40,16 @@ class User extends Authenticatable
     public function enCeMoment(){
         return $this->belongsTo('App\Show', 'id_serie_of_the_moment');
     }
+
+    public function userLinks(){
+        return $this->belongsToMany('App\User','user_links','current_user_id','second_user_id','id')->withPivot('current_user_id','second_user_id','confirmed');
+    }
+
+    public function viewedShow(){
+        return $this->belongsToMany('App\Show','viewed_shows')->withPivot('comment','id_viewed_status');
+    }
+
+    public function showToWatch(){
+        return $this->belongsToMany('App\Show','showToWatches')->withPivot('id_user_who_recommends');
+    }
 }

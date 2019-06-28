@@ -30,7 +30,19 @@ class userController extends Controller
     }
 
     public function friends(){
-        return view('dtn.friends');
+
+        $user=User::find(Auth::user()->id);
+        $user_friends = $user->userlinks()->get();
+        // dd($user_friends);
+
+        return view('dtn.friends', compact('user_friends'));
+    }
+
+    public function notifications(){
+//        foreach(Auth::user()->unreadNotifications as $notification){
+//           var_dump($notification->data['description']);
+//        }
+        return view('dtn.notifications');
     }
 
 }
