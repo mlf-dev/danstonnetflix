@@ -38,12 +38,20 @@ Route::get('/user/denyFriend/{notification}', 'dtn\FriendsController@denyFriend'
 
 Route::get('/user/addfriend/{second_user}', 'dtn\FriendsController@addFriend')->name('addfriend');
 
+Route::get('/user/addviewedshow', 'dtn\UserShowsController@addDejaVu')->name('add_deja_vu');
+
+Route::get('/user/recommends', 'dtn\UserShowsController@recommend')->name('recommander');
+
 Route::get('/user/{id}', 'dtn\userController@profile')->name('profile');
 
-Route::get('/user/encemoment/addmovie', 'dtn\UserShowController@addEnCeMoment_movie')->name('add_en_ce_moment_movie');
-Route::get('/user/encemoment/addtv', 'dtn\UserShowsController@addEnCeMoment_tv')->name('add_en_ce_moment_tv');
+Route::get('/user/encemoment/addmovie', 'dtn\UserShowsController@addEnCeMoment_movie')->name('add_en_ce_moment_movie');
+Route::get('/user/encemoment/addtv/{id_tmdb}', 'dtn\UserShowsController@addEnCeMoment_tv')->name('add_en_ce_moment_tv');
+
+
+Route::get('/user/{id}/dejavu', 'dtn\UserController@dejaVu')->name('user_deja_vu');
+
+Route::get('user/{id}/friends', 'dtn\userController@friends')->name('friends');
 
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('user/{id}/friends', 'dtn\userController@friends')->name('friends');
 

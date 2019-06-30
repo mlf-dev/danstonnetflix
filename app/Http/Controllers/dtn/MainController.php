@@ -17,7 +17,8 @@ class MainController extends Controller
     public function search(Request $request){
 
         // récupération de ce qui a été tapé par le user dans l'input de recherche
-        $search_query = $request->input('search');
+        $search = $request->input('search');
+        $search_query = str_replace(' ', '%20', $search);
         $search_option = $request->input('searchOption');
 
         // dd($search_query);
@@ -25,8 +26,9 @@ class MainController extends Controller
 
             // envoie requête avec intégration de ce qui a été tapé par le user dans le paramètre "query", qu'on stocke dans une variable
             $datas = json_decode(file_get_contents('https://api.themoviedb.org/3/search/'.$search_option.'?api_key=0f78a5a808b71acf355a601def5da6b4&language=fr&query='.$search_query.'&page=1'));
-
-            // dd($datas->results);
+            // dd($datas);
+            // dd($datas->results[0]->id);
+            // dd(count($datas->results));
 
             // retourner la vue avec les données récupérées
             return view('dtn.searchResult', ['datas' => $datas, 'search_option'=>$search_option]);

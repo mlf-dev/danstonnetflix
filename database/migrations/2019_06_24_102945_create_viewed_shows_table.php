@@ -22,7 +22,7 @@ class CreateViewedShowsTable extends Migration
             $table->unsignedBigInteger('id_show');
             $table->foreign('id_show')->references('id')->on('shows')->onDelete('cascade');
 
-            $table->string('comment');
+            $table->string('comment')->nullable();
 
             $table->unsignedBigInteger('id_viewed_status');
             $table->foreign('id_viewed_status')->references('id')->on('viewed_statuses')->onDelete('cascade');

@@ -19,7 +19,7 @@ class AddForeignKeysToRecommendations extends Migration
             $table->foreign('id_show')->references('id')->on('shows')->onDelete('cascade');
 
             $table->unsignedBigInteger('id_recommendation_status');
-            $table->foreign('id_recommendation_status')->references('id')->on('recommendationStatuts')->onDelete('cascade');
+            $table->foreign('id_recommendation_status')->references('id')->on('recommendation_statuses')->onDelete('cascade');
 
             Schema::enableForeignKeyConstraints();
 

@@ -13,7 +13,7 @@ class CreateRecommendationStatutsTable extends Migration
      */
     public function up()
     {
-        Schema::create('recommendationStatuts', function (Blueprint $table) {
+        Schema::create('recommendation_statuses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
 

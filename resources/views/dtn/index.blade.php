@@ -42,7 +42,7 @@
                     <div id="search-div" class="col-md-6">
                         <h1>Rechercher :</h1>
                         <form method="GET" action="{{route('search')}}">
-                            <input name="search" id="search" class="form-control mr-sm-2" type="text" placeholder="Que recherchez-vous ?" aria-label="Search">
+                            <input name="search" id="search" class="form-control mr-sm-2" type="text" placeholder="Que recherchez-vous ?" autocomplete="off" aria-label="Search">
                             <br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="searchOption" id="serie" value="tv" checked>
@@ -70,7 +70,7 @@
                             <form action="{{ route('login') }}" method="POST">
                                 @csrf
                                 <div class="form-group">
-                                    <input id="email" type="text" class="form-control input-log @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}" required autocomplete="email" autofocus name="email">
+                                    <input id="email" type="text" class="form-control input-log @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}" required autocomplete="off" autofocus name="email">
                                     @error('email')
                                     <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

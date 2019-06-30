@@ -8,13 +8,11 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="row justify-content-center">
-            <h1>Séries populaires</h1>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                @include('flash::message')
-            </div>
+        <h1>Séries populaires</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-">
+            @include('flash::message')
         </div>
     </div>
     <div class="row justify-content-center row-container-tvs-or-movies">

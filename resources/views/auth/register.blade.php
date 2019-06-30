@@ -33,7 +33,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-8 offset-md-2">
-                                <input placeholder="Pseudo" id="pseudo" type="text" class="input-register form-control @error('pseudo') is-invalid @enderror" name="pseudo" value="{{ old('pseudo') }}" required autocomplete="pseudo" autofocus>
+                                <input placeholder="Pseudo" id="pseudo" type="text" class="input-register form-control @error('pseudo') is-invalid @enderror" name="pseudo" autocomplete="off" value="{{ old('pseudo') }}" required autofocus>
 
                                 @error('pseudo')
                                     <span class="invalid-feedback" role="alert">
@@ -45,7 +45,7 @@
 
                         <div class="form-group row">
                             <div class="col-md-8 offset-md-2">
-                                <input placeholder="Email" id="email" type="email" class="input-register form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input placeholder="Email" id="email" type="email" class="input-register form-control @error('email') is-invalid @enderror" name="email" autocomplete="off" value="{{ old('email') }}" required>
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">

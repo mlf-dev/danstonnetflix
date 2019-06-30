@@ -35,7 +35,7 @@
             </li>
             <li>
                 <form class="form-inline" method="GET" action="{{route('search')}}">
-                    <input name="search" id="search" class="form-control mr-sm-2" type="text" placeholder="Que recherchez-vous ?" aria-label="Search">
+                    <input name="search" autocomplete="off" id="search" class="form-control mr-sm-2" type="text" placeholder="Que recherchez-vous ?" aria-label="Search">
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="searchOption" id="serie" value="tv" checked>
                         <label class="form-check-label" for="serie">Série</label>

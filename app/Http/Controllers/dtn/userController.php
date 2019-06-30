@@ -13,20 +13,31 @@ class userController extends Controller
 {
     //
     public function profile(Request $request){
-        $user = Auth::user();
+        $user = User::where('id','=',strval($request->id))->first();
+        // dd($user);
         $encemoment = $user->enCeMoment;
+        $dejavu = $user->viewedShows()->latest()->first();
         //dd($encemoment);
-
+        //dd($dejavu);
         $UserShowsController= new UserShowsController();
 
         // dd($user->enCeMoment);
         if ($user->enCeMoment == null){
             $serie_du_moment = null;
         } else {
+            // on récupère les données dans la DB de tmdb
             $serie_du_moment = $UserShowsController->searchByID($encemoment);
         }
 
-        return view ('dtn.profile', compact('user', 'serie_du_moment'));
+        if ($user->viewedShows()->latest()->first() == null){
+            $show_deja_vu = null;
+        } else {
+            // on récupère les données dans la DB de tmdb
+            $show_deja_vu = $UserShowsController->searchByID($dejavu);
+            // dd($show_deja_vu);
+        }
+
+        return view ('dtn.profile', compact('user', 'serie_du_moment', 'show_deja_vu'));
     }
 
     public function friends(){
@@ -45,4 +56,12 @@ class userController extends Controller
         return view('dtn.notifications');
     }
 
+    public function dejaVu(){
+
+        $viewed_shows = Auth::user()->viewedShows();
+
+        dd($viewed_shows);
+
+        return view('dtn.dejaVu');
+    }
 }

@@ -8,36 +8,29 @@
 @section('content')
 
     <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                @include('flash::message')
+            </div>
+        </div>
         <div class="row justify-content-around">
-            @for($i=0; $i<=2; $i++)
-                <div class="flex-column col-md-3 background-dark-opactiy show-tv-item justify-content-center">
-                    @if($search_option == 'tv')
-                    <img class="img-fluid" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2{{$datas->results[$i]->poster_path}}" alt="poster série {{$datas->results[$i]->name}}">
-                    <h1 class="text-center name">{{$datas->results[$i]->name}}</h1>
-                        @else
-                        <img class="img-fluid" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2{{$datas->results[$i]->poster_path}}" alt="poster série {{$datas->results[$i]->title}}">
-                        <h1 class="text-center name">{{$datas->results[$i]->title}}</h1>
-                    @endif
-                    <div class="row justify-content-center">
-                        <div class="counter" data-cp-percentage="{{($datas->results[$i]->vote_average)*10}}" data-cp-color="#e50914">
-                        </div>
-                        <div class="btn-group ">
-                            <button type="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" class="plus-button"><span>+</span></button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">+ Déjà vu</a>
-                                <a class="dropdown-item" href="#">+ En ce moment</a>
-                                <a class="dropdown-item" href="#">+ A regarder plus tard</a>
-                                <a class="dropdown-item" href="#">Recommander à un ami</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row justify-content-center">
-                        <a href="#" class="plus-d-infos-link">Voir plus d'infos</a>
-                    </div>
-
+            @if((count($datas->results)) == 0)
+                <div class="col-8">
+                    <p>Aucun réssultat ne correspond à votre recherche.</p>
                 </div>
+            @elseif((count($datas->results)) == 1)
+                @for($i=0; $i<1; $i++)
+                    @include('layouts.search_result_item')
             @endfor
+            @elseif((count($datas->results)) > 1 && (count($datas->results)) <=2)
+                @for($i=0; $i<=1; $i++)
+                    @include('layouts.search_result_item')
+                @endfor
+            @elseif((count($datas->results)) > 2)
+                @for($i=0; $i<=2; $i++)
+                    @include('layouts.search_result_item')
+                @endfor
+            @endif
         </div>
     </div>
 
